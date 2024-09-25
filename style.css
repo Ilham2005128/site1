@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+*{ font-family: "Niconne", cursive;
+    font-weight: 400;
+    font-style: normal;
+  margin: 10px;
+  padding: 10px;
+
+}
+header h1{
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+}
+#bb{
+    width: 85%;
+    text-align: center;
+
+}
+p{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+}
+h4{
+    font-size:30px;
+    color: rgb(29, 31, 135);
+    text-transform: uppercase;
+   
+}
+h5{
+    font-size:30px;
+    color: rgb(0, 184, 132);
+    text-transform: lowercase;
+
+   
+}
+nav{
+    height: 60px;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    align-items: center;
+}
+nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sign-up a {
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sign-up :hover {
+    background-color: rgb(26, 214, 248);
+    color: black;
+}
+div {
+    border: 1px solid blue  ;
+    text-align: center;}
+#intro{
+    font-size: larger;
+    color: rgb(11, 14, 23);
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#form{
+    background-color: rgba(0, 255, 162, 0.381);
+    text-align: left;
+}
+
+#form label{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase; 
+       
+}
+#form input{
+    background-color: rgba(255, 228, 196, 0.368);
+    width: calc(100% - 40px);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+button{
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 25%;
+    text-align: center;
+    cursor: pointer;
+    width: 100px;
+}
+button:hover{
+    background-color: aqua;
+}
+h6{
+    font-size:30px;
+    color: blue;
+    text-transform: uppercase;
+     
+}
+table{
+    border: 1px;
+}
+#tb{
+    background-color: rgba(0, 255, 162, 0.381);
+    text-align: center;
+}
+#tb th{
+    background-color: blue;
+    border: 1px solid;
+    border-radius: 10px;
+}
