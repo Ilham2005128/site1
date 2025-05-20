@@ -1,119 +1,200 @@
+/* Import des polices Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Niconne&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-*{ font-family: "Niconne", cursive;
-    font-weight: 400;
-    font-style: normal;
+
+/* Style global */
+* {
   margin: 10px;
   padding: 10px;
+  box-sizing: border-box;
+  font-family: "Niconne", cursive;
+}
 
+body {
+  background-color: #f8f8f8;
 }
-header h1{
-    text-align: center;
-    color: blue;
-    font-size: 50px;
-}
-#bb{
-    width: 85%;
-    text-align: center;
 
+/* Titre principal */
+header h1 {
+  text-align: center;
+  color: blue;
+  font-size: 50px;
 }
-p{
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 350;
-    font-style: normal;
-}
-h4{
-    font-size:30px;
-    color: rgb(29, 31, 135);
-    text-transform: uppercase;
-   
-}
-h5{
-    font-size:30px;
-    color: rgb(0, 184, 132);
-    text-transform: lowercase;
 
-   
+/* Image principale */
+#bb {
+  width: 85%;
+  margin: auto;
+  text-align: center;
 }
-nav{
-    height: 60px;
-    background-color: aqua;
-    display: flex;
-    justify-content: space-around;
-    text-decoration: none;
-    align-items: center;
+
+/* Paragraphes */
+p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 350;
 }
+
+/* Sous-titres */
+h4 {
+  font-size: 30px;
+  color: rgb(29, 31, 135);
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 30px;
+  color: rgb(0, 184, 132);
+  text-transform: lowercase;
+}
+
+/* Barre de navigation */
+nav {
+  height: 60px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 nav a {
-    text-decoration: none;
-    font-size: 15px;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Bouton d'inscription */
 .sign-up a {
-    padding: 10px 15px;
-    text-decoration: none;
-    background-color: blue;
-    border-radius: 10px;
-    cursor: pointer;
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
 }
 
-.sign-up :hover {
-    background-color: rgb(26, 214, 248);
-    color: black;
+.sign-up a:hover {
+  background-color: rgb(26, 214, 248);
+  color: black;
 }
+
+/* Conteneur générique */
 div {
-    border: 1px solid blue  ;
-    text-align: center;}
-#intro{
-    font-size: larger;
-    color: rgb(11, 14, 23);
-    font-style: oblique;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#form{
-    background-color: rgba(0, 255, 162, 0.381);
-    text-align: left;
+  border: 1px solid blue;
+  text-align: center;
 }
 
-#form label{
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-transform: uppercase; 
-       
+/* Introduction */
+#intro {
+  font-size: larger;
+  color: rgb(11, 14, 23);
+  font-style: oblique;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#form input{
-    background-color: rgba(255, 228, 196, 0.368);
-    width: calc(100% - 40px);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+/* Formulaire */
+#form {
+  background-color: rgba(0, 255, 162, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
 }
-button{
-    background-color: blue;
-    color: aliceblue;
-    border-radius: 25%;
-    text-align: center;
-    cursor: pointer;
-    width: 100px;
+
+#form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
 }
-button:hover{
-    background-color: aqua;
+
+#form input {
+  background-color: rgba(255, 228, 196, 0.4);
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-h6{
-    font-size:30px;
-    color: blue;
-    text-transform: uppercase;
-     
+
+/* Boutons */
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 25%;
+  cursor: pointer;
+  width: 100px;
 }
-table{
-    border: 1px;
+
+button:hover {
+  background-color: aqua;
+  color: black;
 }
-#tb{
-    background-color: rgba(0, 255, 162, 0.381);
-    text-align: center;
+
+/* Titre secondaire */
+h6 {
+  font-size: 30px;
+  color: blue;
+  text-transform: uppercase;
 }
-#tb th{
-    background-color: blue;
-    border: 1px solid;
-    border-radius: 10px;
+
+/* Tableau */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#tb {
+  background-color: rgba(0, 255, 162, 0.2);
+  text-align: center;
+}
+
+#tb th,
+#tb td {
+  border: 1px solid blue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#tb th {
+  background-color: blue;
+  color: white;
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 30px;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav a {
+    padding: 10px 0;
+  }
+
+  #form {
+    width: 95%;
+  }
+
+  button {
+    width: 80px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  h4, h5, h6 {
+    font-size: 20px;
+  }
 }
